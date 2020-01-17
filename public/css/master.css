@@ -1,0 +1,23 @@
+.kotak1{
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  background: linear-gradient(270deg, #123812 4.03%, rgba(18, 56, 18, 0.971095) 11.26%, rgba(18, 56, 18, 0.915584) 23.96%, rgba(18, 56, 18, 0.866449) 37.37%, rgba(19, 78, 18, 0.824989) 54.48%, rgba(19, 88, 18, 0.805827) 68.06%, rgba(20, 101, 18, 0.805827) 79.7%, rgba(21, 123, 18, 0.805827) 91.34%);
+}
+
+.fontrighteous{
+  font-family: 'Righteous';
+}
+
+.fontsaira{
+  font-family: 'Saira';
+}
+
+.navnav{
+  background-color: transparent;
+  box-shadow:none !important;
+}
+
+.annas{
+  color: #FFFFFF;
+}
