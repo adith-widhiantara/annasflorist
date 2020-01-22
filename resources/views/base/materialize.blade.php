@@ -7,6 +7,7 @@
 
     <!-- materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Font Awesome 4.7 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,6 +15,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Righteous|Saira&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
 
     <title>@yield('title')</title>
   </head>
