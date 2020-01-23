@@ -10,35 +10,37 @@
 <div class="kotak1">
 
 <!-- Navbar -->
-<nav class="navnav">
-  <div class="container">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo"><img src="img/logo.png" alt="logo" width="156" height="auto"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-align-justify" aria-hidden="true"></i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down fontrighteous">
-        <li>
-         <div class="center row">
-            <div class="col s12" >
-              <div class="row" id="topbarsearch">
-                <div class="col s2 iconsearch">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-                <div class="input-field col s10">
-                  <input id="search" type="text" class="validate">
-                  <label for="search">Search</label>
+<div class="navbar-fixed">
+  <nav class="navnav">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="img/logo.png" alt="logo" width="156" height="auto"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-align-justify" aria-hidden="true"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down fontrighteous">
+          <li>
+            <div class="center row">
+              <div class="col s12" >
+                <div class="row" id="topbarsearch">
+                  <div class="col s2 iconsearch">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                  <div class="input-field col s10">
+                    <input id="search" type="text" class="validate">
+                    <label for="search">Search</label>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li><a href="#" class="iconsearch">Home</a></li>
-        <li><a href="#" class="iconsearch">Profil</a></li>
-        <li><a href="#" class="iconsearch">Kategori</a></li>
-        <li><a href="#modal1" class="modal-trigger iconsearch">Member</a></li>
-      </ul>
+          </li>
+          <li><a href="#" class="iconsearch">Home</a></li>
+          <li><a href="#" class="iconsearch">Profil</a></li>
+          <li><a href="#" class="iconsearch">Kategori</a></li>
+          <li><a href="#modal1" class="modal-trigger iconsearch">Member</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
 <ul class="sidenav" id="mobile-demo">
   <li>
@@ -81,7 +83,7 @@
         <img src="{{ asset('img/cactus.png') }}" alt="cactus">
       </div>
     </div>
-    <div class="col xl5 m12 s12 center-align">
+    <div class="annasspesialis col xl5 m12 s12 center-align">
       <h1 class="fontsaira annas">ANNAS<br>FLORIST</h1>
       <h5 class="fontsaira spesialis">Spesialis Kaktus</h5>
       <div class="shopnow">
@@ -224,10 +226,206 @@
 <!-- End Kotak 2 -->
 
 <!-- Sales -->
-
+<div class="container sales">
+  <div class="row">
+    <div class="col s6">
+      <h1 class="fontsaira salesword">Sales</h1>
+    </div>
+    <div class="col s6">
+      <a href="#"><h1 class="fontsaira lihatsemua">Lihat Semua <i class="material-icons">arrow_forward</i></h1></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ asset('img/sales/sukulen panda.jpg') }}">
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h5>Sukulen Panda</h5>
+          <div class="row">
+            <div class="col s6">
+              <p>Rp. 40.000</p>
+            </div>
+            <div class="col s6">
+              <p class="right-align">Jember</p>
+            </div>
+          </div>
+          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ asset('img/sales/sukulen roseum.jpg') }}">
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h5>Sukulen Roseum</h5>
+          <div class="row">
+            <div class="col s6">
+              <p>Rp. 35.000</p>
+            </div>
+            <div class="col s6">
+              <p class="right-align">Jember</p>
+            </div>
+          </div>
+          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ asset('img/sales/terarium.jpg') }}">
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h5>Terarium</h5>
+          <div class="row">
+            <div class="col s6">
+              <p>Rp. 80.000</p>
+            </div>
+            <div class="col s6">
+              <p class="right-align">Jember</p>
+            </div>
+          </div>
+          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ asset('img/sales/terarium3.jpg') }}">
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h5>Terarium Hiasan</h5>
+          <div class="row">
+            <div class="col s6">
+              <p>Rp. 70.000</p>
+            </div>
+            <div class="col s6">
+              <p class="right-align">Jember</p>
+            </div>
+          </div>
+          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- End Sales -->
 
+<!-- Souvenir -->
+<div class="container sales">
+  <div class="row">
+    <div class="col s6">
+      <h1 class="fontsaira salesword">Souvenir</h1>
+    </div>
+    <div class="col s6">
+      <a href="#"><h1 class="fontsaira lihatsemua">Lihat Semua <i class="material-icons">arrow_forward</i></h1></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ asset('img/souvenir/1.jpg') }}">
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h5>Sukulen Panda</h5>
+          <div class="row">
+            <div class="col s6">
+              <p>Rp. 40.000</p>
+            </div>
+            <div class="col s6">
+              <p class="right-align">Jember</p>
+            </div>
+          </div>
+          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ asset('img/souvenir/2.jpg') }}">
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h5>Sukulen Roseum</h5>
+          <div class="row">
+            <div class="col s6">
+              <p>Rp. 35.000</p>
+            </div>
+            <div class="col s6">
+              <p class="right-align">Jember</p>
+            </div>
+          </div>
+          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ asset('img/souvenir/3.jpg') }}">
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h5>Terarium</h5>
+          <div class="row">
+            <div class="col s6">
+              <p>Rp. 80.000</p>
+            </div>
+            <div class="col s6">
+              <p class="right-align">Jember</p>
+            </div>
+          </div>
+          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ asset('img/souvenir/4.jpg') }}">
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h5>Terarium Hiasan</h5>
+          <div class="row">
+            <div class="col s6">
+              <p>Rp. 70.000</p>
+            </div>
+            <div class="col s6">
+              <p class="right-align">Jember</p>
+            </div>
+          </div>
+          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Souvenir -->
+
 <script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 50) {
+        $('.navnav').addClass('green darken-4');
+    } else {
+        $('.navnav').removeClass('green darken-4');
+    }
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems);

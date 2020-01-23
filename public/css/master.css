@@ -1,12 +1,6 @@
 body{
   background: rgba(196, 243, 196, 0.32);
 }
-/* Kotak 1 */
-.kotak1{
-  width: auto;
-  height: auto;
-  background: linear-gradient(270deg, #123812 4.03%, rgba(18, 56, 18, 0.971095) 11.26%, rgba(18, 56, 18, 0.915584) 23.96%, rgba(18, 56, 18, 0.866449) 37.37%, rgba(19, 78, 18, 0.824989) 54.48%, rgba(19, 88, 18, 0.805827) 68.06%, rgba(20, 101, 18, 0.805827) 79.7%, rgba(21, 123, 18, 0.805827) 91.34%);
-}
 
 .fontrighteous{
   font-family: 'Righteous';
@@ -24,9 +18,32 @@ body{
   font-family: 'Red Hat Text';
 }
 
+/* navbar */
+nav{
+  height: 90px;
+}
+
+.navbar-fixed {
+  position: absolute;
+  z-index:999999999;
+}
+
 .navnav{
   background-color: transparent;
+  transition: background-color 1s ease 0s;
+  -webkit-box-shadow:none !important;
   box-shadow:none !important;
+}
+
+.navbar-fixed .scrolled {
+  background-color: #000000 !important;
+  transition: background-color 200ms linear;
+}
+
+.navnav .solid {
+  background-color: #000000 !important;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
 }
 
 .navnav .nav-wrapper .brand-logo{
@@ -36,9 +53,21 @@ body{
 .iconsearch{
   margin-top: 11px;
 }
+/* end navbar */
 
-.cactus{
-  margin-top: 100px;
+/* Kotak 1 */
+.kotak1{
+  width: auto;
+  height: auto;
+  background: linear-gradient(270deg, #123812 4.03%, rgba(18, 56, 18, 0.971095) 11.26%, rgba(18, 56, 18, 0.915584) 23.96%, rgba(18, 56, 18, 0.866449) 37.37%, rgba(19, 78, 18, 0.824989) 54.48%, rgba(19, 88, 18, 0.805827) 68.06%, rgba(20, 101, 18, 0.805827) 79.7%, rgba(21, 123, 18, 0.805827) 91.34%);
+}
+
+.cactus .row{
+  padding-top: 100px;
+}
+
+.annasspesialis{
+  margin-top: 180px;
 }
 
 .annas{
@@ -66,7 +95,7 @@ body{
   width: 755px;
   height: 500px;
   top: 100px;
-  margin-top: 100px;
+  margin-top: 200px;
   background: linear-gradient(270deg, rgba(152, 203, 152, 0.67) 5.1%, rgba(120, 186, 120, 0.458523) 39.08%, rgba(90, 170, 90, 0.257447) 61.95%, rgba(71, 161, 71, 0.135619) 81.46%, rgba(51, 150, 51, 0) 100%);
   border-radius: 0px 400px 0px 0px;
 
@@ -100,7 +129,7 @@ body{
 }
 
 .sosmed{
-  margin-top: 100px;
+  margin-top: 90px;
   position: relative;
   height: 109px;
 }
@@ -119,7 +148,7 @@ body{
 .sosmed .sosmed2{
   z-index: 10;
   background: #154B0C;
-  height: auto;
+  height: 105px;
 }
 
 .sosmed .sosmed2 h5{
@@ -166,3 +195,68 @@ body{
   color: #000000;
 }
 /* End Kotak 2 */
+
+/* Sales */
+.sales .salesword{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 79px;
+  text-indent: 2px;
+  color: #011F00;
+}
+
+.sales .lihatsemua{
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 57px;
+  text-indent: 2px;
+  color: #011F00;
+}
+
+.sales .card .card-image img{
+  height: 200px;
+}
+
+.sales .card .card-content h5{
+  font-family: 'Saira';
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #011F00;
+}
+
+.sales .card .card-content p{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 31px;
+  color: #123812;
+}
+
+.sales .card .card-content .btnn{
+  background: #eeeeee;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.sales .card .card-content .btnn::before{
+  background: #4caf50;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.sales .card .card-content .btnn:hover{
+  background: #4caf50;
+  color: #ffffff;
+}
+/* End Sales */
