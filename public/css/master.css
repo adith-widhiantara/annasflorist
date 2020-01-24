@@ -40,8 +40,8 @@ nav{
   transition: background-color 200ms linear;
 }
 
-.navnav .solid {
-  background-color: #000000 !important;
+.solid {
+  background-color: #146511 !important;
   transition: background-color 1s ease 0s;
   box-shadow: 0 0 4px grey;
 }
@@ -260,3 +260,189 @@ nav{
   color: #ffffff;
 }
 /* End Sales */
+
+/* Workshop */
+.workshop .workshopword{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 79px;
+  text-indent: 2px;
+  color: #011F00;
+}
+
+.workshop .lihatsemua{
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 57px;
+  text-indent: 2px;
+  color: #011F00;
+}
+
+.outer{
+  display: table; margin: 0 auto;
+}
+
+.inner{
+  width:100%;
+}
+/* End Workshop */
+
+/* Dekorasi */
+.dekorasi .dekorasiword{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 79px;
+  text-indent: 2px;
+  color: #011F00;
+}
+
+.dekorasi .lihatsemua{
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 57px;
+  text-indent: 2px;
+  color: #011F00;
+}
+
+.dekorasi .rincian{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  /* line-height: 57px; */
+  text-align: justify;
+  text-indent: 2px;
+
+  color: #011F00;
+}
+
+.dekorasi .selengkapnya{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 57px;
+  text-align: right;
+  text-indent: 2px;
+
+  color: #011F00;
+  transition: .1s;
+}
+
+.dekorasi .selengkapnya:hover{
+  transition: .1s;
+  color: #6DBD3B;
+}
+/* End Dekorasi */
+
+/* Profil */
+.profil .profilword{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 76px;
+  color: #011F00;
+}
+
+.profil .profilimg{
+  vertical-align: middle;
+  height: 100%;
+  display: inline-block;
+}
+
+.profil .profilimg img{
+  height: auto;
+  width:100%;
+  vertical-align: middle;
+}
+
+.profil .profiltext{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  text-indent: 2px;
+
+  color: #011F00;
+
+  mix-blend-mode: normal;
+}
+/* End Profil */
+
+/* Maps */
+#mapid {
+  height: 500px;
+}
+/* End Maps */
+
+/* About */
+.about{
+  margin-top: 50px;
+}
+
+.about .about1 h5,
+.about .about2 h5
+{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+
+  color: #011F00;
+}
+
+.about .about1 p,
+.about .about2 p
+{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 38px;
+
+  color: #011F00;
+}
+
+.about .about2 img{
+  height: 42px;
+}
+
+.about .about3 img{
+  height: 395px;
+  width: 492px;
+}
+
+.about .about3 p{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: justify;
+
+  color: #011F00;
+}
+
+.about .footer{
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 47px;
+  text-align: center;
+
+  color: #011F00;
+}
+/* End About */
