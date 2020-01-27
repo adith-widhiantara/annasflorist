@@ -1,77 +1,91 @@
-@extends('layouts.app')
+@extends('base.bootstrap')
+@section('title', 'Daftar | Annas Florist')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+<head>
+  <link rel="stylesheet" href="{{ url('css/login.css') }}">
+</head>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+@section('bootstrap')
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+<!-- Pendaftaran -->
+<div class="container pendaftaran">
+  <div class="row">
+    <div class="row-12 mx-auto word">
+      <div class="shadow-sm">
+        <p>Pendaftaran</p>
+      </div>
     </div>
+  </div>
 </div>
+<!-- End Pendaftaran -->
+
+<!-- Form -->
+<div class="container formdata">
+  <form>
+    <div class="form-group row">
+      <label for="Nama" class="col-2 offset-2 col-form-label">Nama</label>
+      <div class="col-6">
+        <input type="text" class="form-control" id="Nama">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="Alamat" class="col-2 offset-2 col-form-label">Alamat</label>
+      <div class="col-6">
+        <div class="row">
+          <div class="form-group col-4">
+            <select id="inputState" class="form-control">
+              <option selected>Provinsi</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-4">
+            <select id="inputState" class="form-control">
+              <option selected>Kabupaten</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-4">
+            <select id="inputState" class="form-control">
+              <option selected>Kecamatan</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <textarea type="text" class="form-control" id="Alamat"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="JenisKelamin" class="col-2 offset-2 col-form-label">Jenis Kelamin</label>
+      <div class="col-2">
+        <select id="inputState" class="form-control">
+          <option selected>...</option>
+          <option>Pria</option>
+          <option>Wanita</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="NomorTelepon" class="col-2 offset-2 col-form-label">Nomor Telepon</label>
+      <div class="col-6">
+        <input type="number" class="form-control" id="NomorTelepon">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="Email" class="col-2 offset-2 col-form-label">E-mail</label>
+      <div class="col-6">
+        <input type="email" class="form-control" id="Email">
+      </div>
+    </div>
+
+  </form>
+</div>
+<!-- End Form -->
 @endsection

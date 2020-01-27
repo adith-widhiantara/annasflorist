@@ -14,7 +14,7 @@
   <nav class="navnav">
     <div class="container">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img src="img/logo.png" alt="logo" width="156" height="auto"></a>
+        <a href="#top" class="brand-logo scroll"><img src="img/logo.png" alt="logo" width="156" height="auto"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-align-justify" aria-hidden="true"></i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down fontrighteous">
           <li>
@@ -32,10 +32,11 @@
               </div>
             </div>
           </li>
-          <li><a href="#" class="iconsearch">Home</a></li>
-          <li><a href="#" class="iconsearch">Profil</a></li>
-          <li><a href="#" class="iconsearch">Kategori</a></li>
-          <li><a href="#modal1" class="modal-trigger iconsearch">Member</a></li>
+          <li><a href="#top" class="iconsearch scroll">Home</a></li>
+          <li><a href="#profil" class="iconsearch scroll">Profil</a></li>
+          <li><a href="#kategori" class="iconsearch scroll">Kategori</a></li>
+          <li><a href="#" class="iconsearch"><i class="material-icons">shopping_cart</i></a></li>
+          <li><a href="#modal1" class="modal-trigger iconsearch"><i class="material-icons">person_pin</i></a></li>
         </ul>
       </div>
     </div>
@@ -145,8 +146,8 @@
 <!-- End Kotak 1 -->
 
 <!-- Kotak 2 -->
-<div class="kotak2">
-  <div class="container row">
+<div class="kotak2" id="kategori">
+  <div class="row detectscreen">
     <div class="items col xl2 offset-xl1 l2 m6">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
@@ -157,7 +158,7 @@
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4 fontredhat">Sales<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Klik <a class="scroll" href="#sales">disini</a> untuk ke Sales</p>
         </div>
       </div>
     </div>
@@ -172,7 +173,7 @@
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4 fontredhat">Souvenir<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Klik <a class="scroll" href="#souvenir">disini</a> untuk ke Souvenir</p>
         </div>
       </div>
     </div>
@@ -187,7 +188,7 @@
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4 fontredhat">Workshop<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Klik <a class="scroll" href="#workshop">disini</a> untuk ke Workshop</p>
         </div>
       </div>
     </div>
@@ -202,7 +203,7 @@
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4 fontredhat">Rental<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Klik <a class="scroll" href="#rental">disini</a> untuk ke Rental</p>
         </div>
       </div>
     </div>
@@ -217,7 +218,7 @@
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4 fontredhat">Dekorasi<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <p>Klik <a class="scroll" href="#dekorasi">disini</a> untuk ke Dekorasi</p>
         </div>
       </div>
     </div>
@@ -226,7 +227,7 @@
 <!-- End Kotak 2 -->
 
 <!-- Sales -->
-<div class="container sales">
+<div class="container sales" id="sales">
   <div class="row">
     <div class="col s6">
       <h1 class="fontsaira salesword">Sales</h1>
@@ -240,7 +241,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/sales/sukulen panda.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Sukulen Panda</h5>
@@ -260,7 +261,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/sales/sukulen roseum.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Sukulen Roseum</h5>
@@ -280,7 +281,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/sales/terarium.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Terarium</h5>
@@ -300,7 +301,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/sales/terarium3.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Terarium Hiasan</h5>
@@ -321,7 +322,7 @@
 <!-- End Sales -->
 
 <!-- Souvenir -->
-<div class="container sales">
+<div class="container sales" id="souvenir">
   <div class="row">
     <div class="col s6">
       <h1 class="fontsaira salesword">Souvenir</h1>
@@ -335,7 +336,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/souvenir/1.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Sukulen Panda</h5>
@@ -355,7 +356,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/souvenir/2.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Sukulen Roseum</h5>
@@ -375,7 +376,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/souvenir/3.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Terarium</h5>
@@ -395,7 +396,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/souvenir/4.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Terarium Hiasan</h5>
@@ -416,7 +417,7 @@
 <!-- End Souvenir -->
 
 <!-- Rental -->
-<div class="container sales">
+<div class="container sales" id="rental">
   <div class="row">
     <div class="col s6">
       <h1 class="fontsaira salesword">Rental</h1>
@@ -430,7 +431,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/rental/1.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Sukulen Roseum</h5>
@@ -450,7 +451,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/rental/2.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Sukulen Roseum</h5>
@@ -470,7 +471,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/rental/3.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Sukulen Roseum</h5>
@@ -490,7 +491,7 @@
       <div class="card">
         <div class="card-image">
           <img src="{{ asset('img/rental/4.jpg') }}">
-          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">shopping_cart</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add_shopping_cart</i></a>
         </div>
         <div class="card-content">
           <h5>Sukulen Roseum</h5>
@@ -511,7 +512,7 @@
 <!-- End Rental -->
 
 <!-- Workshop -->
-<div class="container workshop">
+<div class="container workshop" id="workshop">
   <div class="row">
     <div class="col s6">
       <h1 class="fontsaira workshopword">Workshop</h1>
@@ -533,7 +534,7 @@
 <!-- End Workshop -->
 
 <!-- Dekorasi -->
-<div class="container dekorasi">
+<div class="container dekorasi" id="dekorasi">
   <div class="row">
     <div class="col s6">
       <h1 class="fontsaira dekorasiword">Dekorasi</h1>
@@ -588,14 +589,18 @@
 <!-- End Dekorasi -->
 
 <!-- Profil -->
-<div class="container profil">
+<div class="container profil" id="profil">
   <h1 class="fontsaira profilword">Profil CV. Annas Florist</h1>
   <div class="row">
     <div class="col s7 profilimg">
       <img src="{{ asset('img/profil.png') }}" alt="profil">
     </div>
     <div class="col s5">
-      <p class="profiltext">CV. ANNAS FLORIST (Anna’s Florist) suatu usaha yang bertempat di Perum Mastrip Blok W-4 RT/RW 03/21 Kel./Kec. Sumbersari – Jember 68121, berdiri sejak 25 Februari 2018 dengan fokus produk pada saat itu adalah kaktus.<br><br>Didirikan oleh Anna Ramadhaniati, Sandra Putra Dwi Permana dan Shandiputra Budhi Perdana. Anna’s Florist memiliki kiblat style and trend di Jakarta.<br><br>Anna’s Florist terus mengembangkan jenis produk dan inovasi usahanya sehingga saat ini produk yang kami pasarkan meliputi Cactus, Indoor Plant dan Home Decor.</p>
+      <input type="checkbox" class="read-more-state" id="post-1" />
+
+      <p class="profiltext read-more-wrap">CV. ANNAS FLORIST (Anna’s Florist) suatu usaha yang bertempat di Perum Mastrip Blok W-4 RT/RW 03/21 Kel./Kec. Sumbersari – Jember 68121.<span class="read-more-target"> Berdiri sejak 25 Februari 2018 dengan fokus produk pada saat itu adalah kaktus. Didirikan oleh Anna Ramadhaniati, Sandra Putra Dwi Permana dan Shandiputra Budhi Perdana. Anna’s Florist memiliki kiblat style and trend di Jakarta.<br><br>Anna’s Florist terus mengembangkan jenis produk dan inovasi usahanya sehingga saat ini produk yang kami pasarkan meliputi Cactus, Indoor Plant dan Home Decor.</span></p>
+
+      <label for="post-1" class="read-more-trigger"></label>
     </div>
   </div>
 </div>
@@ -641,45 +646,5 @@
 </div>
 <!-- End About -->
 
-<script>
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if($(this).scrollTop() > 50) {
-        $('.navnav').addClass('solid');
-    } else {
-        $('.navnav').removeClass('solid');
-    }
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems);
-  });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems, {
-      indicators: false,
-      height: 800
-    });
-  });
-
-// Maps
-var mymap = L.map('mapid').setView([-8.166074, 113.720853], 100);
-
-L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=amayy49uQF1YDQn4fFWc', {
-    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
-    maxZoom: 18
-}).addTo(mymap);
-
-var marker = L.marker([-8.166074, 113.720853]).addTo(mymap);
-marker.bindPopup("<b>Annas Florist</b><br>Perumahan Mastrip Blok W-4, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68121").openPopup();
-// End Maps
-</script>
+<script src="{{ asset('js/master.js') }}" type="text/javascript"></script>
 @endsection
