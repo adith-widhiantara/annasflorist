@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// debugging
+Route::get('/detail', 'ProductController@show')->name('detail');
+// end debunggig

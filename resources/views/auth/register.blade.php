@@ -12,7 +12,7 @@
   <div class="row">
     <div class="row-12 mx-auto word">
       <div class="shadow-sm">
-        <p>Pendaftaran</p>
+        <p>PENDAFTARAN</p>
       </div>
     </div>
   </div>
@@ -85,6 +85,18 @@
       </div>
     </div>
 
+    <div class="form-group row">
+      <label for="Password" class="col-2 offset-2 col-form-label">Password</label>
+      <div class="col-6">
+        <input type="password" class="form-control" id="Password">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="div-2 offset-9">
+        <button type="submit" class="btn btnn">Daftar</button>
+      </div>
+    </div>
   </form>
 </div>
 <!-- End Form -->

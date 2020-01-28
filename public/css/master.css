@@ -54,9 +54,48 @@ nav{
   margin-top: 11px;
 }
 
+/* Modal */
 .modal{
   top: 100px !important;
+  width: 40% !important;
 }
+
+.modal .btnn button{
+  background: rgba(67, 210, 31, 0.74) !important;
+  border-radius: 20px !important;
+  font-family: 'Rambla';
+  color: #000000;
+  font-size: 20px;
+}
+
+.modal .sandi{
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+
+  color: #123812;
+}
+
+.modal .member{
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  color: #000000;
+}
+
+.modal .memberdaftar{
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration-line: underline;
+
+  color: #375436;
+}
+/* End Modal */
 /* end navbar */
 
 /* Kotak 1 */

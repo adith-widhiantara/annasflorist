@@ -12,11 +12,37 @@ body{
   padding-right: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+
+  color: #FFFFFF;
 }
 /* End Pendaftaran */
 
 /* Form */
 .formdata{
+ margin-top: 100px;
+}
 
+.formdata label{
+  font-family: 'Saira';
+  font-size: 24px;
+}
+
+.formdata select{
+  font-family: 'Saira';
+  font-size: 16px;
+}
+
+.formdata .btnn{
+  font-family: 'Saira';
+  background: #78BA78;
+  border-radius: 30px;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.formdata .btnn:hover{
+  color: #FFFFFF;
+  background: #5b8c5b;
+  transition: 0.3s;
 }
 /* End Form */

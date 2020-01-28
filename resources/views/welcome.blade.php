@@ -35,6 +35,10 @@
           <li><a href="#top" class="iconsearch scroll">Home</a></li>
           <li><a href="#profil" class="iconsearch scroll">Profil</a></li>
           <li><a href="#kategori" class="iconsearch scroll">Kategori</a></li>
+          @if (Auth::check()) {
+            <li><a href="#" class="iconsearch">Notifikasi</a></li>
+          }
+          @endif
           <li><a href="#" class="iconsearch"><i class="material-icons">shopping_cart</i></a></li>
           <li><a href="#modal1" class="modal-trigger iconsearch"><i class="material-icons">person_pin</i></a></li>
         </ul>
@@ -67,11 +71,28 @@
 
 <div id="modal1" class="modal">
   <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    <div class="row">
+      <div class="input-field col s6 offset-s3">
+        <input id="email" type="email" class="validate">
+        <label for="email">E-Mail</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6 offset-s3">
+        <input id="password" type="password" class="validate">
+        <label for="password">Kata Sandi</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6 offset-s3 center-align btnn">
+        <button class="btn waves-effect waves-light modal-close" type="submit" name="action">Masuk</button>
+        <a href="{{ route('password.request') }}"><p class="sandi">Lupa Kata Sandi?</p></a>
+        <p class="member">Belum jadi member? <a class="memberdaftar" href="{{ route('register') }}">Daftar</a></p>
+      </div>
+    </div>
+
   </div>
 </div>
 <!-- End Navbar -->

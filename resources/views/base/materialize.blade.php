@@ -10,7 +10,7 @@
     <script src="https://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
 
     <!-- materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{{ asset('css/base/materialize.min.css') }}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Font Awesome 4.7 -->
@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous|Saira&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rambla&display=swap" rel="stylesheet">
 
     <!-- Maps -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
