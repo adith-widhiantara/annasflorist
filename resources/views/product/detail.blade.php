@@ -4,7 +4,8 @@
 
 @section('content')
 <head>
-  <link rel="stylesheet" href="{{ url('css/master.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/product.css') }}">
+  <script type="text/javascript" src="{{ asset('js/product.js') }}"></script>
 </head>
 
 <!-- Navbar -->
@@ -24,19 +25,16 @@
                   </div>
                   <div class="input-field col s10">
                     <input id="search" type="text" class="validate">
-                    <label for="search">Search</label>
+                    <label for="search">Cari sesuatu</label>
                   </div>
                 </div>
               </div>
             </div>
           </li>
-          <li><a href="#top" class="iconsearch scroll">Home</a></li>
-          <li><a href="#profil" class="iconsearch scroll">Profil</a></li>
-          <li><a href="#kategori" class="iconsearch scroll">Kategori</a></li>
-          @if (Auth::check()) {
-            <li><a href="#" class="iconsearch">Notifikasi</a></li>
-          }
-          @endif
+          <li><a href="#" class="iconsearch scroll">Home</a></li>
+          <li><a href="#" class="iconsearch scroll">Profil</a></li>
+          <li><a href="#" class="iconsearch scroll">Kategori</a></li>
+          <li><a href="#" class="iconsearch">Notifikasi</a></li>
           <li><a href="#" class="iconsearch"><i class="material-icons">shopping_cart</i></a></li>
           <li><a href="#modal1" class="modal-trigger iconsearch"><i class="material-icons">person_pin</i></a></li>
         </ul>
@@ -61,11 +59,72 @@
       </div>
     </div>
   </li>
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Profil</a></li>
-  <li><a href="#">Kategori</a></li>
-  <li><a href="#modal1" class="modal-trigger">Member</a></li>
+  <li><a href="#" class="iconsearch scroll">Home</a></li>
+  <li><a href="#" class="iconsearch scroll">Profil</a></li>
+  <li><a href="#" class="iconsearch scroll">Kategori</a></li>
+  <li><a href="#" class="iconsearch">Notifikasi</a></li>
+  <li><a href="#" class="iconsearch"><i class="material-icons">shopping_cart</i></a></li>
+  <li><a href="#modal1" class="modal-trigger iconsearch"><i class="material-icons">person_pin</i></a></li>
 </ul>
+
+<!-- Modal -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+<!-- End Modal -->
 <!-- End Navbar -->
+
+<!-- Deskripsi -->
+<div class="deskripsi">
+  <div class="container">
+    <div class="row">
+      <div class="col s5 gambar">
+        <img class="responsive-img z-depth-5 hoverable" src="{{ asset('img/sales/sukulen panda.jpg') }}" alt="">
+      </div>
+      <div class="col s6 offset-s1 caption">
+        <p class="caption1">Sukulen Panda<br>Rp. 40.000</p>
+        <div class="row caption2">
+          <div class="col s3">
+            <p>Kategori</p>
+            <p>Jenis</p>
+            <p>Stok</p>
+            <div class="row">
+              <div class="col s12">
+                <p>Warna</p>
+              </div>
+            </div>
+            <p>Jumlah</p>
+          </div>
+          <div class="col s6">
+            <p>Sales</p>
+            <p>Sukulen</p>
+            <p>5</p>
+            <div class="row">
+              <div class="col s4">
+                <p class="color">Biru</p>
+                <p>Pink</p>
+              </div>
+              <div class="col s4">
+                <p>Merah</p>
+                <p>Navy</p>
+              </div>
+              <div class="col s4">
+                <p>Hijau</p>
+                <p>Kuning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Deskripsi -->
 
 @endsection

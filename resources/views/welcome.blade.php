@@ -26,7 +26,7 @@
                   </div>
                   <div class="input-field col s10">
                     <input id="search" type="text" class="validate">
-                    <label for="search">Search</label>
+                    <label for="search">Cari sesuatu</label>
                   </div>
                 </div>
               </div>
@@ -544,10 +544,8 @@
   </div>
   <div class="row">
     <div class="col s12">
-      <div class="outer">
-        <div class="inner">
-          <iframe width="1000" height="588" src="https://www.youtube.com/embed/_4pcdIfrif4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+      <div class="video-container">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/_4pcdIfrif4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>

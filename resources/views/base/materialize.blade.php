@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rambla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani&display=swap" rel="stylesheet">
 
     <!-- Maps -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
