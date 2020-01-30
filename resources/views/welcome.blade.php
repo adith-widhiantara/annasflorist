@@ -8,7 +8,6 @@
 
 <!-- Kotak 1 -->
 <div class="kotak1">
-  
 
 <!-- Navbar -->
 <div class="navbar-fixed">
