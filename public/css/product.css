@@ -8,7 +8,7 @@ nav{
 
 .navbar-fixed {
   position: absolute;
-  z-index:999999999;
+  z-index:100;
 }
 
 .navnav{
@@ -50,14 +50,6 @@ nav{
   margin-top: 204px;
 }
 
-.deskripsi img{
-  height: 643px;
-  width: auto;
-
-  border-radius: 30px;
-  object-fit: cover;
-}
-
 .deskripsi .caption .caption1{
   font-family: 'Mukta Vaani';
   font-style: normal;
@@ -77,8 +69,72 @@ nav{
   text-indent: 2px;
 
   color: #000000;
-
+  margin-top: 10px;
 }
+
+.deskripsi .caption .caption2 p{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Testing radio button*/
+label {
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Mukta Vaani';
+}
+
+.card-input-element+.card {
+  height: auto;
+  color: #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.card-input-element+.card:hover {
+  cursor: pointer;
+}
+
+.card-input-element:checked+.card {
+  border: 2px solid #32a852;
+  -webkit-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s;
+}
+
+.card-input-element:checked+.card::after {
+  -webkit-animation-name: fadeInCheckbox;
+  animation-name: fadeInCheckbox;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes fadeInCheckbox {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateZ(-20deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+
+@keyframes fadeInCheckbox {
+  from {
+    opacity: 0;
+    transform: rotateZ(-20deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+/* End Testing radio button*/
 /* inputnumber */
 .inputnumber form {
   width: 300px;
@@ -179,6 +235,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-family: 'Mukta Vaani';
   font-size: 28px;
   color: #FFFFFF;
+}
+
+.deskripsi .colorbiru:hover{
+
 }
 /* end deskripsi */
 
