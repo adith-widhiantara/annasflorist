@@ -87,4 +87,9 @@ class ProductController extends Controller
     {
         return view('product.cart');
     }
+
+    public function testing(Product $product)
+    {
+        return view('testing');
+    }
 }

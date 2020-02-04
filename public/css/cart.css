@@ -45,6 +45,133 @@ nav{
 }
 /* end navbar */
 
+/* Cart */
+.cart .height{
+  height: 127px;
+}
+
+.cart .cart2{
+  margin-top: 265px;
+}
+
+.cart .cart3{
+  margin-top: 238px;
+}
+
+.cart .cart2 .btnn{
+  border-color: transparent !important;
+  background-color: #CC6666 !important;
+  color: #FFFFFF !important;
+  border-radius: 10%;
+  transition: 1s all ease;
+}
+
+.cart .cart2 .btnn:hover{
+  cursor: pointer;
+  background-color: #d14747 !important;
+  transition: 1s all ease;
+}
+
+.cart .cart2 img{
+  border-radius: 20px;
+}
+
+.cart .judul{
+  font-family: 'Saira';
+  font-size: 24px;
+  color: #123812;
+}
+
+.cart .harga{
+  font-family: 'Saira';
+  font-size: 24px;
+  color: #000000;
+}
+/* inputnumber */
+.inputnumber form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.inputnumber form input{
+  color: #000000;
+  font-style: normal;
+  font-family: 'Mukta Vaani';
+  font-size: 30px;
+}
+
+.inputnumber .value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.inputnumber .value-button:hover {
+  cursor: pointer;
+}
+
+.inputnumber form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.inputnumber form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+.inputnumber form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+.inputnumber input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* end inputnumber */
+/* End Cart */
+
+/* Total */
+.total{
+  font-family: 'Saira';
+  font-size: 28px;
+  color: #000000;
+}
+
+.total .belisekarang{
+  margin-top: 28px;
+  background: rgba(21, 123, 18, 0.805827);
+}
+
+.total .belisekarang a{
+  color: #FFFFFF;
+}
+/* End Total */
+
 /* Catalog */
 .sales .lihatsemua{
   font-family: 'Mukta Vaani';

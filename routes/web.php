@@ -26,4 +26,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 // debugging
 Route::get('/detail', 'ProductController@show')->name('detail');
 Route::get('/cart', 'ProductController@cart')->name('cart');
+Route::get('/testing', 'ProductController@testing')->name('testing');
 // end debugging

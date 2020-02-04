@@ -79,6 +79,62 @@
 <!-- End Modal -->
 <!-- End Navbar -->
 
+<!-- Cart -->
+<div class="container cart">
+  <div class="row">
+    <div class="col s1 cart2 height valign-wrapper hapusitem">
+      <button class="btnn">
+        <i class="material-icons">close</i>
+      </button>
+    </div>
+    <div class="col s2 cart2">
+      <img class="responsive-img hoverable" src="{{ asset('img/sales/sukulen panda.jpg') }}" alt="">
+    </div>
+    <div class="col s2 valign-wrapper cart2 judul">
+      <p>Sukulen Panda</p>
+    </div>
+    <div class="col s2 cart3 harga">
+      <p>Harga</p>
+      <div class="hargaproduk">
+        40.000
+      </div>
+    </div>
+    <div class="col s2 cart3 harga">
+      <p>Jumlah Satuan</p>
+      <div class="inputnumber">
+        <form>
+          <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+          <input type="number" id="number" value="1" min="1">
+          <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+        </form>
+      </div>
+    </div>
+    <div class="col s3 cart3 harga">
+      <p>Subharga Produk</p>
+      <div class="hargatotaljs">
+        80.000
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Cart -->
+
+<!-- Total -->
+<section class="container total">
+  <div class="row">
+    <div class="col s3 offset-s5">
+      <p>Total Subharga Produk</p>
+    </div>
+    <div class="col s2 hargatotal2js" id="akhir">
+      80.000
+    </div>
+    <div class="col s2 belisekarang">
+      <a href="#" role="button" type="submit">Beli Sekarang</a>
+    </div>
+  </div>
+</section>
+<!-- End Total -->
+
 <!-- Catalog -->
 <div class="container sales">
   <div class="row">
