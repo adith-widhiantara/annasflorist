@@ -10,6 +10,38 @@ $(document).ready(function() {
 });
 // End Navbar
 
+// layar
+$(document).ready(function() {
+  $(window).width(function() {
+    if($(this).width() > 1367) {
+        $('.sales').addClass('container');
+        $('.sales').removeClass('row');
+        $('.saless').removeClass('col s10 offset-s1');
+
+        $('.cart').addClass('container');
+        $('.cart').removeClass('row');
+        $('.cartt').removeClass('col s10 offset-s1');
+
+        $('.total').addClass('container');
+        $('.total').removeClass('row');
+        $('.totall').removeClass('col s10 offset-s1');
+    } else {
+        $('.sales').removeClass('container');
+        $('.sales').addClass('row');
+        $('.saless').addClass('col s10 offset-s1');
+
+        $('.cart').removeClass('container');
+        $('.cart').addClass('row');
+        $('.cartt').addClass('col s10 offset-s1');
+
+        $('.total').removeClass('container');
+        $('.total').addClass('row');
+        $('.totall').addClass('col s10 offset-s1');
+    }
+  });
+});
+// End layar
+
 // inputnumber
 function increaseValue() {
   var value = parseInt(document.getElementById('number').value, 10);
@@ -28,73 +60,41 @@ function decreaseValue() {
 // end inputnumber
 
 // Counter Harga
-/* Set rates + misc */
-var taxRate = 0.05;
-var shippingRate = 15.00;
-var fadeTime = 300;
-
-
-/* Assign actions */
-$('.inputnumber input').change( function() {
-  updateQuantity(this);
-});
-
-$('.hapusitem button').click( function() {
-  removeItem(this);
-});
-
-
-/* Recalculate cart */
-function recalculateCart()
-{
-  var subtotal = 0;
-
-  /* Sum up row totals */
-  $('.cart').each(function () {
-    subtotal += parseFloat($(this).children('.hargatotaljs').text());
-  });
-
-  /* Calculate totals */
-  var tax = subtotal * taxRate;
-  var shipping = (subtotal > 0 ? shippingRate : 0);
-  var total = subtotal + tax + shipping;
-
-  /* Update totals display */
-  $('.hargatotal2js').fadeOut(fadeTime, function() {
-    $('#akhir').html(subtotal.toFixed(2));
-    $('.hargatotal2js').fadeIn(fadeTime);
-  });
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
 }
 
-
-/* Update quantity */
-function updateQuantity(quantityInput)
-{
-  /* Calculate line price */
-  var productRow = $(quantityInput).parent().parent();
-  var price = parseFloat(productRow.children('.hargaproduk').text());
-  var quantity = $(quantityInput).val();
-  var linePrice = price * quantity;
-
-  /* Update line price display and recalc cart totals */
-  productRow.children('.hargatotaljs').each(function () {
-    $(this).fadeOut(fadeTime, function() {
-      $(this).text(linePrice.toFixed(2));
-      recalculateCart();
-      $(this).fadeIn(fadeTime);
-    });
-  });
+function ready() {
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
 }
 
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+}
 
-/* Remove item from cart */
-function removeItem(removeButton)
-{
-  /* Remove row from DOM and recalc cart total */
-  var productRow = $(removeButton).parent().parent();
-  productRow.slideUp(fadeTime, function() {
-    productRow.remove();
-    recalculateCart();
-  });
+function updateCartTotal() {
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('Rp.', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'Rp.' + total
 }
 // End Counter Harga

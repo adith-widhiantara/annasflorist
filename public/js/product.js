@@ -10,6 +10,38 @@ $(document).ready(function() {
 });
 // End Navbar
 
+// Layar
+$(document).ready(function() {
+  $(window).width(function() {
+    if($(this).width() > 1367) {
+        $('.deskripsii').addClass('container');
+        $('.deskripsii').removeClass('row');
+        $('.deskripsiii').removeClass('col s10 offset-s1');
+
+        $('.narasi').addClass('container');
+        $('.narasi').removeClass('row');
+        $('.narasii').removeClass('col s10 offset-s1');
+
+        $('.sales').addClass('container');
+        $('.sales').removeClass('row');
+        $('.saless').removeClass('col s10 offset-s1');
+    } else {
+        $('.deskripsii').removeClass('container');
+        $('.deskripsii').addClass('row');
+        $('.deskripsiii').addClass('col s10 offset-s1');
+
+        $('.narasi').removeClass('container');
+        $('.narasi').addClass('row');
+        $('.narasii').addClass('col s10 offset-s1');
+
+        $('.sales').removeClass('container');
+        $('.sales').addClass('row');
+        $('.saless').addClass('col s10 offset-s1');
+    }
+  });
+});
+// End Layar
+
 // dropdown
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.dropdown-trigger');

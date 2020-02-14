@@ -92,4 +92,14 @@ class ProductController extends Controller
     {
         return view('testing');
     }
+
+    public function buynow(Product $product)
+    {
+        return view('product.buynow');
+    }
+
+    public function buynowbyatm(Product $product)
+    {
+        return view('product.buynowbyatm');
+    }
 }

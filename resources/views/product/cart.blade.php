@@ -79,40 +79,63 @@
 <!-- End Modal -->
 <!-- End Navbar -->
 
+<!-- Spacing -->
+<div class="spacing"></div>
+<!-- End Spacing -->
+
 <!-- Cart -->
-<div class="container cart">
-  <div class="row">
-    <div class="col s1 cart2 height valign-wrapper hapusitem">
-      <button class="btnn">
-        <i class="material-icons">close</i>
-      </button>
-    </div>
-    <div class="col s2 cart2">
-      <img class="responsive-img hoverable" src="{{ asset('img/sales/sukulen panda.jpg') }}" alt="">
-    </div>
-    <div class="col s2 valign-wrapper cart2 judul">
-      <p>Sukulen Panda</p>
-    </div>
-    <div class="col s2 cart3 harga">
-      <p>Harga</p>
-      <div class="hargaproduk">
-        40.000
+<div class="cart-items">
+  <div class="cart">
+    <div class="cartt">
+      <div class="row cart-row">
+        <div class="col s1 cart2 height valign-wrapper hapusitem">
+          <button class="btnn">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <div class="col s2 cart2">
+          <img class="responsive-img hoverable" src="{{ asset('img/sales/sukulen panda.jpg') }}" alt="">
+        </div>
+        <div class="col s2 valign-wrapper cart2 judul">
+          <p>Sukulen Panda</p>
+        </div>
+        <div class="col s2 cart3 harga">
+          <p>Harga</p>
+          <span class="cart-price">Rp.10000</span>
+        </div>
+        <div class="col s2 cart3 harga">
+          <p>Jumlah Satuan</p>
+          <input class="cart-quantity-input" type="number" value="2" max="4" min="0" />
+        </div>
+        <div class="col s3 cart3 harga">
+          <p>Subharga Produk</p>
+          <span class="cart-subtotal-price"></span>
+        </div>
       </div>
-    </div>
-    <div class="col s2 cart3 harga">
-      <p>Jumlah Satuan</p>
-      <div class="inputnumber">
-        <form>
-          <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-          <input type="number" id="number" value="1" min="1">
-          <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-        </form>
-      </div>
-    </div>
-    <div class="col s3 cart3 harga">
-      <p>Subharga Produk</p>
-      <div class="hargatotaljs">
-        80.000
+      <div class="row cart-row">
+        <div class="col s1 cart2 height valign-wrapper hapusitem">
+          <button class="btnn">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <div class="col s2 cart2">
+          <img class="responsive-img hoverable" src="{{ asset('img/sales/sukulen panda.jpg') }}" alt="">
+        </div>
+        <div class="col s2 valign-wrapper cart2 judul">
+          <p>Sukulen Panda</p>
+        </div>
+        <div class="col s2 cart3 harga">
+          <p>Harga</p>
+          <span class="cart-price">Rp.40000</span>
+        </div>
+        <div class="col s2 cart3 harga">
+          <p>Jumlah Satuan</p>
+          <input class="cart-quantity-input" type="number" value="2" max="4" min="0" />
+        </div>
+        <div class="col s3 cart3 harga">
+          <p>Subharga Produk</p>
+          <span class="cart-subtotal-price"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -120,102 +143,104 @@
 <!-- End Cart -->
 
 <!-- Total -->
-<section class="container total">
-  <div class="row">
-    <div class="col s3 offset-s5">
+<section class="total">
+  <div class="totall">
+    <div class="row">
+    <div class="col s3 offset-s5 belisekarang2">
       <p>Total Subharga Produk</p>
     </div>
-    <div class="col s2 hargatotal2js" id="akhir">
-      80.000
-    </div>
+    <span class="col s2 cart-total-price"></span>
     <div class="col s2 belisekarang">
       <a href="#" role="button" type="submit">Beli Sekarang</a>
     </div>
+  </div>
   </div>
 </section>
 <!-- End Total -->
 
 <!-- Catalog -->
-<div class="container sales">
-  <div class="row">
-    <div class="col s6 offset-s6">
-      <a href="#"><h1 class="lihatsemua">Lihat Semua <i class="material-icons">arrow_forward</i></h1></a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s3">
-      <div class="card">
-        <div class="card-image">
-          <img src="{{ asset('img/sales/sukulen panda.jpg') }}">
-        </div>
-        <div class="card-content">
-          <h5>Sukulen Panda</h5>
-          <div class="row">
-            <div class="col s6">
-              <p>Rp. 40.000</p>
-            </div>
-            <div class="col s6">
-              <p class="right-align">Jember</p>
-            </div>
-          </div>
-          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
-        </div>
+<div class="sales">
+  <div class="saless">
+    <div class="row">
+      <div class="col s6 offset-s6">
+        <a href="#"><h1 class="lihatsemua">Lihat Semua <i class="material-icons">arrow_forward</i></h1></a>
       </div>
     </div>
-    <div class="col s3">
-      <div class="card">
-        <div class="card-image">
-          <img src="{{ asset('img/sales/sukulen roseum.jpg') }}">
-        </div>
-        <div class="card-content">
-          <h5>Sukulen Roseum</h5>
-          <div class="row">
-            <div class="col s6">
-              <p>Rp. 35.000</p>
-            </div>
-            <div class="col s6">
-              <p class="right-align">Jember</p>
-            </div>
+    <div class="row">
+      <div class="col s3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('img/sales/sukulen panda.jpg') }}">
           </div>
-          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+          <div class="card-content">
+            <h5>Sukulen Panda</h5>
+            <div class="row">
+              <div class="col s6">
+                <p>Rp. 40.000</p>
+              </div>
+              <div class="col s6">
+                <p class="right-align">Jember</p>
+              </div>
+            </div>
+            <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col s3">
-      <div class="card">
-        <div class="card-image">
-          <img src="{{ asset('img/sales/terarium.jpg') }}">
-        </div>
-        <div class="card-content">
-          <h5>Terarium</h5>
-          <div class="row">
-            <div class="col s6">
-              <p>Rp. 80.000</p>
-            </div>
-            <div class="col s6">
-              <p class="right-align">Jember</p>
-            </div>
+      <div class="col s3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('img/sales/sukulen roseum.jpg') }}">
           </div>
-          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+          <div class="card-content">
+            <h5>Sukulen Roseum</h5>
+            <div class="row">
+              <div class="col s6">
+                <p>Rp. 35.000</p>
+              </div>
+              <div class="col s6">
+                <p class="right-align">Jember</p>
+              </div>
+            </div>
+            <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col s3">
-      <div class="card">
-        <div class="card-image">
-          <img src="{{ asset('img/sales/terarium3.jpg') }}">
-        </div>
-        <div class="card-content">
-          <h5>Terarium Hiasan</h5>
-          <div class="row">
-            <div class="col s6">
-              <p>Rp. 70.000</p>
-            </div>
-            <div class="col s6">
-              <p class="right-align">Jember</p>
-            </div>
+      <div class="col s3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('img/sales/terarium.jpg') }}">
           </div>
-          <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+          <div class="card-content">
+            <h5>Terarium</h5>
+            <div class="row">
+              <div class="col s6">
+                <p>Rp. 80.000</p>
+              </div>
+              <div class="col s6">
+                <p class="right-align">Jember</p>
+              </div>
+            </div>
+            <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ asset('img/sales/terarium3.jpg') }}">
+          </div>
+          <div class="card-content">
+            <h5>Terarium Hiasan</h5>
+            <div class="row">
+              <div class="col s6">
+                <p>Rp. 70.000</p>
+              </div>
+              <div class="col s6">
+                <p class="right-align">Jember</p>
+              </div>
+            </div>
+            <a class="center-align" href="#"><p class="btnn">Deskripsi</p></a>
+          </div>
         </div>
       </div>
     </div>
@@ -223,37 +248,5 @@
 </div>
 <!-- End Catalog -->
 
-<!-- About -->
-<div class="container about">
-  <div class="row">
-    <div class="col s4 about1">
-      <h5>Bantuan</h5>
-      <a href="#"><p>Lupa Password</p></a>
-      <a href="#"><p>Lupa Username</p></a>
-      <a href="#"><p>Cara menjadi member</p></a>
-      <a href="#"><p>Cara memesan kaktus</p></a>
-      <a href="#"><p>Cara mengikuti Workshop</p></a>
-    </div>
-
-    <div class="col s4 about2">
-      <h5>Ikuti Kami</h5>
-      <a href="https://www.instagram.com/annas_florist/" target="_blank"><p><img align="middle" src="{{ asset('img/footer/1.png') }}" alt="instagram">Annas_Florist</p></a>
-      <a href="https://api.whatsapp.com/send?phone=6289683792377&text=Halo%20Admin%20Bagaimana%20Cara%20Order%20Kaktusnya" target="_blank"><p><img align="middle" src="{{ asset('img/footer/2.png') }}" alt="whatsapp">089683792377</p></a>
-      <a href="https://shopee.co.id/annaramadhaniati" target="_blank"><p><img align="middle" src="{{ asset('img/footer/3.png') }}" alt="shopee">annaramadhaniati</p></a>
-      <a href="https://www.tokopedia.com/annasflorist?source=universe&st=product" target="_blank"><p><img align="middle" src="{{ asset('img/footer/4.png') }}" alt="annasflorist">annasflorist</p></a>
-    </div>
-
-    <div class="col s4 about3">
-      <img src="{{ asset('img/logo3.png') }}" alt="Logo FLORIST transparent">
-      <p>Jangan khawatir melihat kamar kos, kantor, cafe atau rumah anda kurang menarik. di Annas Florist kalian bisa memesan Kaktus sebagai pengisi ruangan kalian yang kosong agar tampak lebih indah dan sejuk.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12">
-      <p class="footer">© CV. ANNAS FLORIST  - SPESIALIS KAKTUS JEMBER</p>
-    </div>
-  </div>
-</div>
-<!-- End About -->
+@include('base.footer')
 @endsection

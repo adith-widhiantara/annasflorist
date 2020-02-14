@@ -82,7 +82,8 @@
 
 <!-- Deskripsi -->
 <div class="deskripsi">
-  <div class="container">
+  <div class="deskripsii">
+    <div class="deskripsiii">
     <div class="row">
       <div class="col s5 gambar">
         <div class="slider">
@@ -163,7 +164,7 @@
                   <label>
                     <input type="radio" name="myRadios" class="card-input-element d-none" onclick="handleClick(this);" id="2">
                     <div class="card ">
-                      Merah Muda
+                      Pink
                     </div>
                   </label>
                 </div>
@@ -211,7 +212,7 @@
             <div class="inputnumber">
               <form>
                 <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                <input type="number" id="number" value="0" max="4" min="0" />
+                <input class="maxinput" type="number" id="number" value="0" max="" min="0" />
                 <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
               </form>
             </div>
@@ -230,13 +231,15 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
 </div>
 <!-- End Deskripsi -->
 
 <!-- Caption -->
-<div class="container narasi">
-  <div class="row">
+<div class="narasi">
+  <div class="narasii">
+    <div class="row">
     <div class="col s1">
       <p>Deskripsi</p>
     </div>
@@ -244,17 +247,19 @@
       <p>Sukulen panda memiliki bulu halus yang menutupi seluruh permukaan daunnya. Selain itu, di sisi pingir daunnya ada bercak-bercak cokelat yang menyebabkan jenis sukulen ini dinamai panda.<br><br>Karena bentuknya yang kecil dan lembut (selain penampilannya yang menggemaskan), kaktus ini aman diletakkan di tempat yang ramai dengan orang dan anak-anak.</p>
     </div>
   </div>
+  </div>
 </div>
 <!-- End Caption -->
 
 <!-- Catalog -->
-<div class="container sales">
-  <div class="row">
-    <div class="col s6 offset-s6">
-      <a href="#"><h1 class="lihatsemua">Lihat Semua <i class="material-icons">arrow_forward</i></h1></a>
+<div class="sales">
+  <div class="saless">
+    <div class="row">
+      <div class="col s6 offset-s6">
+        <a href="#"><h1 class="lihatsemua">Lihat Semua <i class="material-icons">arrow_forward</i></h1></a>
+      </div>
     </div>
-  </div>
-  <div class="row">
+    <div class="row">
     <div class="col s3">
       <div class="card">
         <div class="card-image">
@@ -331,6 +336,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </div>
 <!-- End Catalog -->

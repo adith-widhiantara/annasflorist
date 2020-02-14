@@ -27,4 +27,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/detail', 'ProductController@show')->name('detail');
 Route::get('/cart', 'ProductController@cart')->name('cart');
 Route::get('/testing', 'ProductController@testing')->name('testing');
+Route::get('/buynow', 'ProductController@buynow')->name('buynow');
+Route::get('/buynowbyatm', 'ProductController@buynowbyatm')->name('buynowbyatm');
 // end debugging
