@@ -102,4 +102,14 @@ class ProductController extends Controller
     {
         return view('product.buynowbyatm');
     }
+
+    public function buynowbybarcode(Product $product)
+    {
+        return view('product.buynowbybarcode');
+    }
+
+    public function totalpay(Product $product)
+    {
+        return view('product.totalpay');
+    }
 }

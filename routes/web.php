@@ -29,4 +29,6 @@ Route::get('/cart', 'ProductController@cart')->name('cart');
 Route::get('/testing', 'ProductController@testing')->name('testing');
 Route::get('/buynow', 'ProductController@buynow')->name('buynow');
 Route::get('/buynowbyatm', 'ProductController@buynowbyatm')->name('buynowbyatm');
+Route::get('/buynowbybarcode', 'ProductController@buynowbybarcode')->name('buynowbybarcode');
+Route::get('/totalpay', 'ProductController@totalpay')->name('totalpay');
 // end debugging

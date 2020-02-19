@@ -106,3 +106,10 @@ body{
   background: rgba(21, 123, 18, 0.805827) !important;
 }
 /* End Pemesanan */
+
+/* By Barcode */
+.barcode{
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+/* End By Barcode */

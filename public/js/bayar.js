@@ -1,3 +1,4 @@
+// Upload bukti
 function readURL(input) {
   if (input.files && input.files[0]) {
 
@@ -30,3 +31,4 @@ $('.image-upload-wrap').bind('dragover', function () {
 	$('.image-upload-wrap').bind('dragleave', function () {
 		$('.image-upload-wrap').removeClass('image-dropping');
 });
+// End Upload Bukti
